@@ -69,8 +69,8 @@ body {
 }
 .section h2 {
   font-size: 2rem;
-  color: #22d3ee;
-  margin-bottom: 20px;
+  color: #38bdf8;
+  margin-bottom: 30px;
 }
 .about-content {
   display: flex;
@@ -100,14 +100,19 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .portfolio-items {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 .portfolio-card {
   background-color: #1e293b;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
 }
 form {
   display: flex;
