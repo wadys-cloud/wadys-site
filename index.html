@@ -2,72 +2,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wadys - Freelance IT Expert</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WADYS – Freelance IT Expert</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="logo.png" alt="Wadys Logo" class="logo">
-      <h1>WADYS</h1>
-      <p class="tagline">Cybersecurity • Cloud • Networks • IT Projects</p>
-    </header>
+  <nav class="navbar">
+    <div class="logo">WADYS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-      <section class="intro">
-        <h2>Hello 👋 I'm Yoro</h2>
-        <p>I help businesses secure, scale, and manage their IT infrastructure.<br>
-        Available for short, mid, or long-term freelance missions.</p>
-      </section>
+  <header class="hero" data-aos="fade-up">
+    <h1>Structured and Expert IT Deployment Across 5000+ Sites</h1>
+    <p>Specialist in cybersecurity, network infrastructure, and IT project management.</p>
+    <a href="#contact" class="btn-primary">Contact Me</a>
+  </header>
 
-      <section class="about">
-        <h2>👤 About Me</h2>
-        <p>I’m an IT engineer and project manager with over 10 years of experience in networks, cloud, and cybersecurity.
-        Passionate about helping companies deliver secure, scalable digital solutions. I bring both field expertise and transversal coordination skills to every mission.</p>
-      </section>
-
-      <section class="services">
-        <h2>🔧 Expertise</h2>
-        <ul>
-          <li><strong>🔐 Cybersecurity</strong> — ISO/IEC 27001 in progress, risk analysis, compliance</li>
-          <li><strong>🌐 Networks</strong> — Cisco, FTTH, SD-WAN, VPN, B2B rollout</li>
-          <li><strong>☁️ Cloud</strong> — AWS, Azure, migration, access control</li>
-          <li><strong>📊 IT Project Management</strong> — Scrum Master, 5000+ site deployments</li>
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="avatar.png" alt="Yoro" class="avatar">
+      <div>
+        <p>I’m Yoro, a freelance IT expert with 10+ years of experience in project delivery and digital transformation.</p>
+        <ul class="pillars">
+          <li><strong>Values:</strong> Professionalism, clarity, and delivery excellence.</li>
+          <li><strong>Project Management Skills:</strong> Agile leadership, transversal coordination.</li>
+          <li><strong>Agile Methodology:</strong> Scrum, continuous improvement, transparency.</li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="portfolio">
-        <h2>📁 Portfolio</h2>
-        <ul>
-          <li><strong>Airport Security App</strong> – MVP mobile app for airport document control (React Native + Firebase)</li>
-          <li><strong>Power BI Training</strong> – Customized training for BOABOB on business intelligence and data modeling</li>
-          <li><strong>PROMOVILLES</strong> – Odoo-based module study and functional coverage validation for city infrastructure</li>
-        </ul>
-      </section>
+  <section id="services" class="section" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">🔐 Cybersecurity</div>
+      <div class="service-card">🌐 Network Infrastructure</div>
+      <div class="service-card">☁️ Cloud Solutions</div>
+      <div class="service-card">📊 IT Project Management</div>
+    </div>
+  </section>
 
-      <section class="cv">
-        <h2>📄 Download My CV</h2>
-        <a href="CV-Yoro-Wade.pdf" download class="cv-link">📥 Click here to download</a>
-      </section>
+  <section id="portfolio" class="section" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-card">
+        <h3>Airport Security</h3>
+        <p>Document verification app for airport agents using Firebase & React Native.</p>
+      </div>
+      <div class="portfolio-card">
+        <h3>BOABOB – Power BI Training</h3>
+        <p>Custom BI training program for business performance optimization.</p>
+      </div>
+      <div class="portfolio-card">
+        <h3>PROMOVILLES – Odoo Study</h3>
+        <p>Functional coverage and digital project support for urban infrastructure.</p>
+      </div>
+    </div>
+  </section>
 
-      <section class="contact">
-        <h2>📩 Contact Me</h2>
-        <form action="https://formspree.io/f/xrbpwkgy" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <p class="alt-contact">Or email me directly at <a href="mailto:yorowade@gmail.com">yorowade@gmail.com</a></p>
-      </section>
-    </main>
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xrbpwkgy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-      <p>© 2025 WADYS – Built with ❤️ by Yoro</p>
-    </footer>
-  </div>
+  <footer>
+    <p>© 2025 WADYS – Designed by Yoro</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
